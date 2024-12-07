@@ -1,4 +1,4 @@
-Build an Arithmetic Formatter Project
+## Build an Arithmetic Formatter Project
 
 Students in primary school often arrange arithmetic problems vertically to make them easier to solve. For example, "235 + 52" becomes:
 ```
@@ -28,11 +28,12 @@ Output:
 ----    ------    ------    -----
   40     -3800     19998      474
 ```
-Rules
+### Rules
 
 The function will return the correct conversion if the supplied problems are properly formatted, otherwise, it will return a string that describes an error that is meaningful to the user.
 
-Situations that will return an error:
+#### Situations that will return an error:
+
 If there are too many problems supplied to the function. The limit is five, anything more will return: 'Error: Too many problems.'
 
 The appropriate operators the function will accept are addition and subtraction. Multiplication and division will return an error. Other operators not mentioned in this bullet point will not need to be tested. The error returned will be: "Error: Operator must be '+' or '-'."
@@ -41,7 +42,7 @@ Each number (operand) should only contain digits. Otherwise, the function will r
 
 Each operand (aka number on each side of the operator) has a max of four digits in width. Otherwise, the error string returned will be: 'Error: Numbers cannot be more than four digits.'
 
-If the user supplied the correct format of problems, the conversion you return will follow these rules:
+#### If the user supplied the correct format of problems, the conversion you return will follow these rules:
 
 There should be a single space between the operator and the longest of the two operands, the operator will be on the same line as the second operand, both operands will be in the same order as provided (the first will be the top one and the second will be the bottom).
 
